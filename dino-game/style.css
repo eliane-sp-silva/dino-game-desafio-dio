@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.body{
+    background-color: #fafafa;
+}
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(img/dino.png);    
+    position: absolute; 
+    /* absolute - vai ficar fixado */
+    bottom: 0;
+}
+.cactus{
+    position: absolute;
+    width: 60px;    
+    height: 60px;
+    bottom: 0;
+    background-image: url(img/coronavirus-gd1b15f88e_640\ redimensionada.png);
+}
+.game-over{
+font-family: 'Press Start 2P', cursive;
+text-align: center;
+color: #666666;
+margin-top: 150px;
+}
+
+@keyframes sliderightfrom {
+    from{
+        background-position: 70000%;
+    } to{
+        background-position: 0;
+
+    }
+}
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
